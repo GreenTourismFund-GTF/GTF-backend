@@ -11,25 +11,34 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "ethers": "^6.13.4",
     "express": "^4.21.1",
     "near-api-js": "^5.0.1"
   },
   "keywords": [],
   "description": "",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "@openzeppelin/contracts": "^5.1.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "^4.8.3",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "@types/chai": "^4.3.4",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
-    "@types/node": "^22.8.2",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^8.12.2",
     "@typescript-eslint/parser": "^8.12.2",
-    "dotenv": "^16.4.5",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
     "eslint": "^9.13.0",
-    "hardhat": "^2.22.15",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.13.0",
     "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }
