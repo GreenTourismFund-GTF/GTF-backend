@@ -24,6 +24,10 @@ contract Token is ERC20, Ownable, Pausable {
         require(totalSupply() + amount <= maxSupply, "Exceeds max supply");
         _mint(to, amount);
     }
+
+    function approveWalletConnector(address connector, uint256 amount) external {
+    approve(connector, amount);
+    }
     
     function burn(uint256 amount) external {
         _burn(msg.sender, amount);
