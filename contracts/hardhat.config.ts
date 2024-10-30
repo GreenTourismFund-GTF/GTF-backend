@@ -1,8 +1,6 @@
+// hardhat.config.ts
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-import "@nomiclabs/hardhat-ethers";
-import "@nomiclabs/hardhat-waffle";
-import "@typechain/hardhat";
 import "dotenv/config";
 
 const config: HardhatUserConfig = {
@@ -28,3 +26,4 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+
