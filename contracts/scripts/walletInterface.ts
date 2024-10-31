@@ -1,4 +1,4 @@
-mport { ethers } from "hardhat";
+import { ethers } from "hardhat";
 import { WalletConnector } from "../typechain-types";
 
 export class WalletInterface {
