@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Or higher, depending on your needs
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true, // Helps when importing CommonJS modules
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true, // Helps catch implicit `any` types
+    "outDir": "./dist", // Compiled files go here
+    "rootDir": "./", // Points to the root folder
+    "resolveJsonModule": true, // Allows importing JSON files
+    "isolatedModules": true
+  },
+  "include": [
+    "./**/*.ts",
+    "env.d.ts"
+  ], // Adjust to include your TypeScript files
+  "exclude": [
+    "node_modules",
+    "dist"
+  ] // Exclude output and dependency folders
+}

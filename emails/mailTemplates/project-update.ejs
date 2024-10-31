@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Project Update</h1>
+        </div>
+        <div class="content">
+            <h2>
+                <%= projectTitle %> - Update
+            </h2>
+            <p>
+                <%= message %>
+            </p>
+            <p>Posted by: <%= author %>
+            </p>
+            <p><a href="<%= projectLink %>" class="button">View Project</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
