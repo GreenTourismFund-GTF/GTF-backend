@@ -1,5 +1,4 @@
 import { Request, Response, NextFunction } from 'express';
-import { File } from 'multer';
 import multer from 'multer';
 import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 import sharp from 'sharp';
@@ -45,7 +44,7 @@ async function uploadToS3(buffer: Buffer, originalname: string): Promise<string>
 }
 
 interface MulterRequest extends Request {
-  files?: File[];
+  files?: Express.Multer.File[];
 }
 
 export const uploadImages = async (req: MulterRequest, res: Response, next: NextFunction) => {
@@ -65,7 +64,7 @@ export const uploadImages = async (req: MulterRequest, res: Response, next: Next
         return next();
       }
 
-      const files = req.files as multer.File[];
+      const files = req.files as Express.Multer.File[];
       const uploadPromises = files.map(async (file) => {
         // Optimize image
         const optimizedBuffer = await sharp(file.buffer)

@@ -74,13 +74,15 @@ export default class Email
     );
   }
 
-  async OrderConfirmation()
+  async welcome()
   {
-    await this.send("order-confirmation.ejs", "Order Confirmation");
-  }
+    await this.send("welcome.ejs", "Welcome to GTF");
+  } 
 
-  async questionReply()
+  async projectAdded(title: string)
   {
-    await this.send("question-reply.ejs", "Question Reply");
+    await this.send(
+      "project-created.ejs", 
+      `New Project Created, \nA new project "${title}" has been created and needs review.`);
   }
 }
